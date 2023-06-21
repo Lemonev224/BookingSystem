@@ -21,8 +21,8 @@ class Product(models.Model):
 	models.CharField(max_length=140, null=True, default=False)
 	price = models.FloatField(max_length=200)
 	digital = models.BooleanField(default=False,null=True, blank=True)
-	description = models.CharField(max_length=400, default='Write a description')
 	Date = models.CharField(max_length=400, default='Place-Date')
+	description = models.CharField(max_length=400, default='Write a description')
 	image = models.ImageField(null=True, blank=True)
 
 	def __str__(self):
